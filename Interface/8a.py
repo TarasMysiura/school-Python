@@ -28,24 +28,25 @@
 #     My_window.mainloop()
 
 from tkinter import *
-s = int(input('Введіть початкову швидкість потяга  - '))
+
+s = int(input("Введіть початкову швидкість потяга  - "))
 t = 1
 while s < 300:
-    s = s+5  # збільшуємо швидкість потяга на 5
-    t = t+1
-    print('За', t, 'годин потяг їхатиме зі швидкістю ', s)
-print('Потяг досягнув швидкості 300 км за год протягом', t, 'годин')
+    s = s + 5  # збільшуємо швидкість потяга на 5
+    t = t + 1
+    print("За", t, "годин потяг їхатиме зі швидкістю ", s)
+print("Потяг досягнув швидкості 300 км за год протягом", t, "годин")
 if t < 50:
     My_window = Tk()
-    My_window.title('Вікно')
-    My_window.geometry('500x500')
+    My_window.title("Вікно")
+    My_window.geometry("500x500")
     My_window.resizable(0, 0)
     My_window["bg"] = "#ff0000"
     My_window.mainloop()
 else:
     My_window = Tk()
-    My_window.title('Вікно')
-    My_window.geometry('500x500')
+    My_window.title("Вікно")
+    My_window.geometry("500x500")
     My_window.resizable(0, 0)
     My_window["bg"] = "#31B404"
     My_window.mainloop()
